@@ -1,5 +1,6 @@
 import React from "react";
 import Node_Global from "../img/Node_Global.jpg";
+import Node_EventLoop from "../img/Node_EventLoop.jpg";
 
 const Notes = () => {
     return (
@@ -68,6 +69,33 @@ const Notes = () => {
             <h3>Setting up JSON file</h3>
             <p>Syntax : "npm init" (to enter all relevant information)/"npm init -y" (save all information as default)</p>
             <p>Importance of package.json : using npm install would immedidate install all the projects dependencies based on the package.json</p>
+            <h2>EventLoop, Async & Promises</h2>
+            <h3>EventLoop</h3>
+            <p>In general, the loop would offload blocking procedure and execute them later</p>
+            <img src = {Node_EventLoop} alt = "" style = {{width : "500px"}}></img>
+            <p>
+                1. nextTick Queue and microTask Queue : The Highest Priority : (1) nextTick Queue-xxxx.nextTick() (2) microTask Queue-Promise.callback
+                <br></br>
+                2. Timers : setTimeout() and setInterval()
+                <br></br>
+                3. Polling : .on('data', callback)
+                <br></br>
+                4. Check : setImmediate()
+            </p>
+            <h3>Async & Promises</h3>
+            <p>
+                One typical type of blocking function : CallBack Chain
+                <br></br>
+                Async and Promise would deal with the callback chain but developers may use Promises to better manage the chain
+                <br></br>
+                Promises Syntax : "new Promise((resolve, reject) -> (BODY wrapping target function with resolve(res) and reject(err)))"
+                <br></br>
+                Promises method "then" allows users to call callback and catch to handle error
+                <br></br>
+                However, developers would create a wrapper function return promises with allow users to pass in external variables
+                <br></br>
+                If we would call promise in another function, we would use variable contain the function value with await
+            </p>
         </div>
 
     );
