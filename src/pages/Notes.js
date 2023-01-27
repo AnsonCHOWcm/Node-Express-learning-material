@@ -2,6 +2,8 @@ import React from "react";
 import Node_Global from "../img/Node_Global.jpg";
 import Node_EventLoop from "../img/Node_EventLoop.jpg";
 import HTTP from "../img/HTTP.jpg";
+import Node_App from '../img/Node_App.jpg'
+import Exp_App from '../img/Exp_App.jpg'
 
 const Notes = () => {
     return (
@@ -130,6 +132,19 @@ const Notes = () => {
                 <p>Note that the object from HTTP modules extend from EventEmitter and the createServer object has "on" method would listen event</p>
                 <h2>Streams</h2>
                 <p>It is under 'fs' module and it has similar functions as read and write but it is used to deal to large set of data</p>
+                <h2>Express</h2>
+                <p>It is a framework applied on node js</p>
+                <p>If we want to render web based on client requests</p>
+                <h3>Without Express</h3>
+                <img src = {Node_App} alt = ""></img>
+                <p>We have to tackle all the reference request one by one</p>
+                <h3>With Expree</h3>
+                <img src = {Exp_App} alt = ""></img>
+                <p>We can handle all the reference request (or static resource requrest in general) in one line
+                    <br></br>
+                    Syntax : "express().use(express.static(STATIC_RESOURCE_PATH)"
+                </p>
+
         </div>
 
     );
