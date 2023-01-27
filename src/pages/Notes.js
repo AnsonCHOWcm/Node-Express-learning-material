@@ -52,7 +52,17 @@ const Notes = () => {
                 <br></br>
                 For the async function : developers can pass callback function after the original function executed
             </p>
-            <p></p>
+            <h2>Built-in Module : HTTP</h2>
+            <p>This module allow us to set up our own server</p>
+            <h3>Accessing HTTP</h3>
+            <p>Syntax : "const http = require('http')</p>
+            <h3>Creating Server</h3>
+            <p>const server = http.createServer((req,res) => (FUNC_BODY))
+                <br></br>
+                In FUNC_BODY, we set up our business logic based on client Request (req) and we provide Responses via (res)
+            </p>
+            <h3>Setting Portal for our server</h3>
+            <p>Syntax : "server.listen(PORTAL_NUMBER)</p>
         </div>
 
     );
