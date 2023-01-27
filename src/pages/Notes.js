@@ -63,6 +63,11 @@ const Notes = () => {
             </p>
             <h3>Setting Portal for our server</h3>
             <p>Syntax : "server.listen(PORTAL_NUMBER)</p>
+            <h2>Project Management : Package.json</h2>
+            <p>Package.json would contain all information about the project</p>
+            <h3>Setting up JSON file</h3>
+            <p>Syntax : "npm init" (to enter all relevant information)/"npm init -y" (save all information as default)</p>
+            <p>Importance of package.json : using npm install would immedidate install all the projects dependencies based on the package.json</p>
         </div>
 
     );
