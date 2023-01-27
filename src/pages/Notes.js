@@ -1,6 +1,7 @@
 import React from "react";
 import Node_Global from "../img/Node_Global.jpg";
 import Node_EventLoop from "../img/Node_EventLoop.jpg";
+import HTTP from "../img/HTTP.jpg";
 
 const Notes = () => {
     return (
@@ -55,6 +56,7 @@ const Notes = () => {
             </p>
             <h2>Built-in Module : HTTP</h2>
             <p>This module allow us to set up our own server</p>
+            <img src = {HTTP} alt = ""></img>
             <h3>Accessing HTTP</h3>
             <p>Syntax : "const http = require('http')</p>
             <h3>Creating Server</h3>
@@ -62,8 +64,24 @@ const Notes = () => {
                 <br></br>
                 In FUNC_BODY, we set up our business logic based on client Request (req) and we provide Responses via (res)
             </p>
+            <h4>Basic Request Message</h4>
+            <p>We may use ".method" to check the client actions
+                <br></br>
+                We may use ".url" to check the resources location that client refering to
+            </p>
+            <h4>Basic Response Message</h4>
+            <p>
+                1. Indicating Status Code and Return Message Type : "res.writeHead(STATUS_CODE, MIME_TYPE)"
+                <br></br>
+                2. Indicating Return Content : "res.write(CONTENT)"
+                <br></br>
+                3. Signal the end of response : "res.end()"
+            </p>
             <h3>Setting Portal for our server</h3>
-            <p>Syntax : "server.listen(PORTAL_NUMBER)</p>
+            <p>Syntax : "server.listen(PORTAL_NUMBER)
+                <br></br>
+                Note that different portal number refers to different port which is designed in different communication
+            </p>
             <h2>Project Management : Package.json</h2>
             <p>Package.json would contain all information about the project</p>
             <h3>Setting up JSON file</h3>
