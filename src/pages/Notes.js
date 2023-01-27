@@ -95,6 +95,7 @@ const Notes = () => {
                 However, developers would create a wrapper function return promises with allow users to pass in external variables
                 <br></br>
                 If we would call promise in another function, we would use variable contain the function value with await
+            </p>
                 <h2>Event Driven Programming : EventEmitter</h2>
                 <p>Node JS is also an Event Driven Programming which waiting for specific event and response accordingly
                     <br></br>
@@ -104,11 +105,11 @@ const Notes = () => {
                     <br></br>
                     2. To customize the Event Response : const customerEventEmitter = new EventEmitter()
                     <br></br>
-                    3. To set the target event : customerEventEmitter.on(TARGET, (callback) (ARGUMENTS) => (BODY))
+                    3. To set the target event and callbacks : customerEventEmitter.on(TARGET, (callback) (ARGUMENTS) => (BODY))
                     <br></br>
                     4. To receive request : customerEventEmitter.emit(EVENT)
                 </p>
-            </p>
+                <p>Note that the object from HTTP modules extend from EventEmitter and the createServer object has "on" method would listen event</p>
         </div>
 
     );
