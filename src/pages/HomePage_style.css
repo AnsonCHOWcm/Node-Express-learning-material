@@ -1,0 +1,8 @@
+.HomePageHeading {
+    color: #3C873A;
+    background-image: url("../img/HomePageBackground.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    padding-bottom: 100%;
+}

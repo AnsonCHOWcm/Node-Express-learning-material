@@ -7,7 +7,7 @@ background: #3C873A;
 height: 85px;
 display: flex;
 justify-content: space-between;
-padding: 0.2rem calc((100vw - 1000px) / 2);
+padding: 10px;
 z-index: 12;
 `;
 
@@ -41,7 +41,7 @@ color: black;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-right: -24px;
+margin-right: 0px;
 /* Second Nav */
 /* margin-right: 24px; */
 /* Third Nav */
