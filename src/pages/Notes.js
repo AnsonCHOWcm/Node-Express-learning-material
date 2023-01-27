@@ -110,6 +110,8 @@ const Notes = () => {
                     4. To receive request : customerEventEmitter.emit(EVENT)
                 </p>
                 <p>Note that the object from HTTP modules extend from EventEmitter and the createServer object has "on" method would listen event</p>
+                <h2>Streams</h2>
+                <p>It is under 'fs' module and it has similar functions as read and write but it is used to deal to large set of data</p>
         </div>
 
     );
